@@ -1,0 +1,42 @@
+﻿<Window x:Class="WpfApp3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+
+
+        <StackPanel>
+            <ComboBox Name="cmbBeverage" Width="200" Margin="20"/>
+
+            <StackPanel Orientation="Horizontal">
+                <CheckBox Name="chkSugar" Content="Sugar" Margin="10"/>
+                <CheckBox Name="chkMilk" Content="Milk" Margin="10"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <RadioButton Name="radSmall" Content="Small" Margin="10"/>
+                <RadioButton Name="radMedium" Content="Medium" Margin="10"/>
+                <RadioButton Name="radLarge" Content="Large" Margin="10"/>
+            </StackPanel>
+
+            <Button Content="Place Order" Click="btnPlaceOrder_Click" HorizontalAlignment="Center" Margin="10"/>
+
+            <Label Name="lblOrderDetails" HorizontalAlignment="Center" Content="">
+                <Label.Style>
+                    <Style TargetType="Label">
+                        <Setter Property="Foreground" Value="Gray"/>
+                        <Setter Property="FontStyle" Value="Italic"/>
+                    </Style>
+                </Label.Style>
+            </Label>
+        </StackPanel>
+
+
+
+
+    </Grid>
+</Window>
